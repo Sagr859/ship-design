@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.homeLayout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainHomePage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid black;
+  padding-bottom: 30vh;
+}
+
+.mainAttractionDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mainAttentionDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: aliceblue;
+}
+
+.mainSubPage{
+  display: flex;
+  flex-direction: column;
+}
+.subDivImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-radius: 50%;
+}
+.subDivImg > img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.subDivCard{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+}
+.subDivContent{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
