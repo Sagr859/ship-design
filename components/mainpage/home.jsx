@@ -41,7 +41,7 @@ function Home() {
                     The Team comprises of NAVAL ARCHITECTS, STRUCTURAL ENGINEERS and DRAFTSMEN.
 The team is lead by a Naval Architect with 20 years of industry experience working in various countries.
 <br/><br/>
-To apply for a job with ShipTech-ICON please send a cover letter together with your C.V. to: <span className='copyUrlLink'>info@ShipTech-ICON.com</span>
+To apply for a job with ShipTech-ICON please send a cover letter together with your C.V. to: <a href='/services#contact_us' className='copyUrlLink'>info@ShipTech-ICON.com</a>
                     </div>
                 </div>
                 <div className='aboutUsDivSec'>

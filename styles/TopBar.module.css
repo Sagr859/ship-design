@@ -14,6 +14,7 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 30%;
+    text-align: left;
 }
 .topBarNavLeftBtnGrp > a{
     padding: 0 10%;
@@ -23,11 +24,9 @@
     flex-direction: row;
     justify-content: flex-start;
     width: 30%;
+    text-align: right;
 }
 .topBarNavRightBtnGrp > a{
     padding: 0 10%;
     cursor: pointer;
-}
-.topBarNavLogoBtn{
-    background-color: blue;
 }

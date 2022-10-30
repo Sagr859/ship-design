@@ -49,6 +49,7 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-top: 45vh;
+  flex-wrap: wrap;
 }
 
 .mainAttentionDiv{
@@ -62,7 +63,9 @@ body {
   width: 150px;
   padding: 1%;
   font-weight: 700;
+  aspect-ratio: 1/1;
   background-color: whitesmoke;
+  margin-top: 1%;
 }
 .aboutUsDiv{
   margin-top: 30vh;
@@ -72,7 +75,7 @@ body {
   justify-content: space-between;
   position: relative;
   padding: 1%;
-  height: 25vh;
+  min-height: 25vh;
   margin-bottom: 10vh;
 }
 .aboutUsDiv::before{
@@ -210,6 +213,87 @@ body {
   padding: 0 10%;
   text-align: center;
 }
+
+.csrProjHomeDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.csrProjHead{
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.csrProjMainContent{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+.csrProjMainContentBody{
+  width: 60%;
+  flex: 2;
+  font-size: 1rem;
+}
+.csrProjMainContentImg{
+  padding-top: 2%;
+  position: relative;
+}
+.csrProjMainContentImg > img{
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.csrProjMainContentImg > p{
+  position: absolute;
+  font-size: .9rem;
+  right: 0;
+  font-weight: 500;
+}
+
+.csrProjGalleryDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2%;
+}
+.csrProjGalSec{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.csrProjGalSec > div > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.csrProjGalSec:nth-of-type(2){
+  padding-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 a {
   color: inherit;
