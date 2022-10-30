@@ -1,3 +1,8 @@
+:root{
+  --camouflage : white;
+  --border-liners: grey;
+}
+
 html,
 body {
   padding: 0;
@@ -12,13 +17,28 @@ body {
   justify-content: space-between;
 }
 
+
+.backgroundImageDiv{
+  height: 20vh;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  position: absolute;
+}
+
+.backgroundImageDiv > img{
+  width: 100%;
+}
+
 .mainHomePage{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid black;
   padding-bottom: 30vh;
 }
 
@@ -28,6 +48,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: 45vh;
 }
 
 .mainAttentionDiv{
@@ -39,39 +60,155 @@ body {
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  background-color: aliceblue;
+  padding: 1%;
+  font-weight: 700;
+  background-color: whitesmoke;
 }
-
-.mainSubPage{
+.aboutUsDiv{
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  padding: 1%;
+  height: 25vh;
+  margin-bottom: 10vh;
+}
+.aboutUsDiv::before{
+  content: '';
+  width: 60%;
+  left: 35%;
+  position: absolute;
+  border: 3px solid var(--border-liners);
+}
+.aboutUsDiv::after{
+  content: '';
+  width: 40%;
+  left: 0%;
+  position: absolute;
+  bottom: 0;
+  border: 3px solid var(--border-liners);
+}
+.aboutUsDivHead{
+  font-size: 5rem;
+  padding: 0;
+  font-weight: 500;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  margin: 0;
+  z-index: 2;
+}
+.aboutUsDivCard{
+  padding-top: 3rem;
+  width: 60%;
+}
+.aboutUsDivImg{
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  right: 0;
+  max-height: 40vh;
+  padding-top: 2%;
+}
+.aboutUsDivImg > img{
+  border-radius: 10%;
+  width: 100%;
+  max-height: 30vh;
+}
+.aboutUsDivided{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.aboutUsDivSec{
+  flex: 2;
+  padding-left: 10%;
+  max-width: 45%;
+}
+.aboutUsDivSec > p{
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.aboutUsDivSecDesc{ 
+  position: relative;
+  margin-top: 5%;
+}
+.aboutUsDivSecDesc::before{
+  content: '';
+  border: 2px solid var(--border-liners);
+  height: 100%;
+  position: absolute;
+  left: -2rem;
+}
+.servicesDiv{
   display: flex;
   flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  position: relative;
+  max-height: 30vh;
 }
-.subDivImg{
+.servicesImages{
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:1rem;
+  gap:1rem;
+  justify-content: center;
+  right: 5rem;
+  top: 0;
+}
+.servicesImages > div{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
+}
+.servicesImages > div > img{
   border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
 }
-.subDivImg > img{
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
+.servicesImages div:last-of-type{
+  grid-column: 1 / span 2;
 }
-.subDivCard{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid blue;
-  border-radius: 10px;
-  padding: 2%;
-  margin: 2%;
+.servicesDiv > p{
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
 }
-.subDivContent{
-  width: 75%;
+.servicesDescp{
+  width: 60%;
+  padding: 1%;
+  padding-left: 0;
+  margin: 1%;
+  margin-left: 0;
+}
+.avlBoatsDiv{
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+}
+.avlBoatsDiv > p{
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.avlBoatsDivDesc{
+  margin-top: 2%;
+  padding: 0 10%;
+  text-align: center;
 }
 
 a {
@@ -83,7 +220,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -91,4 +228,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */

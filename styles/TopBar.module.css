@@ -1,7 +1,7 @@
 .topBarNav{
     width: 90%;
     min-height: 5vh;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +10,6 @@
     top: 0;
 }
 .topBarNavLeftBtnGrp{
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -20,7 +19,6 @@
     padding: 0 10%;
 }
 .topBarNavRightBtnGrp{
-    background-color: bisque;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -28,6 +26,7 @@
 }
 .topBarNavRightBtnGrp > a{
     padding: 0 10%;
+    cursor: pointer;
 }
 .topBarNavLogoBtn{
     background-color: blue;
