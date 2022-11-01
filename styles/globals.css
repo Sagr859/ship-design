@@ -224,6 +224,7 @@ body {
 
 .csrProjHead{
   width: 100%;
+  margin-top: 1rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 600;

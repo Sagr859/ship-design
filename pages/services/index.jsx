@@ -46,7 +46,7 @@ export default function index() {
       <div id="contact_us" className={styles.servicesDivHead}>
         Contact Us
       </div>
-      <div>
+      <div  className='contactUsDiv'>
         <div>
           map
         </div>
@@ -69,7 +69,7 @@ export default function index() {
           </div>
           <div>
             <p>Contact Us</p>
-            <div>
+            <div className=''>
               <form>
                 <div>
                   <label>Enter Your Name</label>

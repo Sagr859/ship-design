@@ -1,0 +1,57 @@
+.boatsLayout{    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+}
+.boatsLayoutHead{    
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.boatsLayoutDesc{
+    display: flex;
+    align-self: center;
+    width: 80%;
+    text-align: center;
+}
+.boatsLayoutGrid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+    gap: 5%;
+    width: 100%;
+}
+.boatsLayoutCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-liners);
+}
+.boatsCardDesc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boatsCardDetDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boatsCardDetTable{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boatsCardDetTable > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.boatsCardDet{
+    padding: 1%;
+}
